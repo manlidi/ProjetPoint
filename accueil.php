@@ -24,6 +24,7 @@ require('authentification.php');
     <br>
     <br>
     <br>
+    <a href="deconnexion.php">Déconnexion</a>
 <section class="section container-fluid">
     <div class="row" id="table-hover-row">
         <div class="col-12">

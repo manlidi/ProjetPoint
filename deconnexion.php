@@ -3,4 +3,5 @@ session_start();
 $_SESSION = [];
 session_destroy();
 header('Location: connexion_vue.php');
+exit;
 ?>
