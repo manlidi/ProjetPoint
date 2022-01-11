@@ -21,10 +21,24 @@ require('authentification.php');
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MDCoder</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contactez nous</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+        </li>
+        </ul>
+    </div>
+</nav>
     <br>
     <br>
-    <br>
-    <a href="deconnexion.php">Déconnexion</a>
 <section class="section container-fluid">
     <div class="row" id="table-hover-row">
         <div class="col-12">

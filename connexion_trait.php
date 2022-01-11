@@ -31,8 +31,11 @@ if (isset($_POST['connect'])) {
                 $_SESSION['pseudo'] = $membreInfo['pseudo'];
 
                 //redirige l'utilisateur vers la page d'accueil
-                header('Location: accueil.php');
-
+                if($membreInfo['confirme'] == 1){
+                header('Location: confirmation.php?id='.$membreInfo['id'].'&cle='.$membreInfo['confirmekey']);
+                }else{
+                    echo "Vous n'etes pas confirmer sur le site";
+                }
             }else{
             $error = "Mot de passe incorrect!!!";
             }        
